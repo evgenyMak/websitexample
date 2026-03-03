@@ -142,7 +142,7 @@ h1 {
     linear-gradient(
       to right,
       rgba(0, 0, 0, 0.811) 0%,
-      rgba(5, 5, 5, 0.413) 40%,
+      rgba(5, 5, 5, 0.326) 40%,
       rgba(0, 0, 0, 0.1) 100%
     ),
     url(./img/background.webp) center/cover no-repeat;
