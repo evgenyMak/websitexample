@@ -161,7 +161,7 @@ h1 {
   font-weight: 800;
   line-height: 1.1;
   color: #fff;
-  width: 40%;
+  width: 100%;
 }
 
 .welcome__description {
@@ -198,8 +198,7 @@ section {
 
 .services {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   list-style: none;
 }
@@ -297,11 +296,11 @@ section {
   background-color: rgba(0, 0, 0, 0.292);
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px 40px;
   padding: 20px;
   border-radius: 5px;
-  width: 100%; 
+  width: 100%;
 }
 
 .info__item {

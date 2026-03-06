@@ -1,26 +1,55 @@
-@media (orientation: portrait) {
-  .header {
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 25px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-  }
-
-  .logo {
     text-align: center;
   }
 
-  .nav {
-    width: 100%;
+  .header {
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    align-items: center;
   }
 
   .nav__menu {
-    flex-direction: column;
-    gap: 5px;
+    justify-content: center;
+    padding: 0;
   }
 
-  .nav__link {
-    font-size: 1.5rem;
+  .welcome__text-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .welcome__description {
+    width: 100%;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .services__item {
+    align-items: center;
+    text-align: center;
+  }
+
+  .info__container-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info__ul {
+    grid-template-columns: 1fr;
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .contacts__container {
+    text-align: center;
   }
 }
