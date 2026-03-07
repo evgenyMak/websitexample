@@ -14,8 +14,7 @@
   }
 
   .nav__menu {
-    justify-content: center;
-    padding: 0;
+    display: none;
   }
 
   .welcome__text-container {
@@ -42,6 +41,16 @@
     align-items: center;
   }
 
+  .info__container-img {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .info__container-text {
+    order: 2;
+    align-items: center;
+  }
+
   .info__ul {
     grid-template-columns: 1fr;
     text-align: left;
@@ -50,6 +59,10 @@
   }
 
   .contacts__container {
+    text-align: center;
+  }
+
+  .info__desc {
     text-align: center;
   }
 }
