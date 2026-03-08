@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../css/mobile.css" />
+    <title>Запись на консультацию</title>
+  </head>
+  <body>
+    <div class="body__container">
+      <form class="form" action="#" method="POST" id="form">
+        <div class="form__header-container">
+          <h1 class="form__header">Запишитесь на консультацию</h1>
+          <p class="form__desc">
+            Заполните форму, и я свяжусь с вами в ближайшее время
+          </p>
+        </div>
+        <div class="form__input-container">
+          <input
+            type="text"
+            name="user_name"
+            class="form__input"
+            placeholder="Ваше имя"
+            required
+          />
+          <input
+            type="text"
+            name="preferred_time"
+            class="form__input"
+            placeholder="Удобные дни и часы"
+            required
+          />
+          <input
+            type="text"
+            name="user_request"
+            class="form__input"
+            placeholder="Кратко опишите свой запрос"
+            required
+          />
+          <input
+            type="tel"
+            name="user_phone"
+            class="form__input"
+            placeholder="Номер телефона"
+            required
+          />
+          <input
+            type="email"
+            name="user_email"
+            class="form__input"
+            placeholder="Email"
+            required
+          />
+
+          <div class="form__options">
+            <p class="form__options-title">Предпочтительный способ связи</p>
+
+            <label class="form__option">
+              <input
+                type="radio"
+                class="form__radio"
+                name="contact_method"
+                value="whatsapp"
+              />
+              Написать в WhatsApp
+            </label>
+
+            <label class="form__option">
+              <input
+                type="radio"
+                class="form__radio"
+                name="contact_method"
+                value="telegram"
+              />
+              Написать в Telegram
+            </label>
+
+            <label class="form__option">
+              <input
+                type="radio"
+                class="form__radio"
+                name="contact_method"
+                value="email"
+              />
+              Написать на Email
+            </label>
+
+            <label class="form__option">
+              <input
+                type="radio"
+                class="form__radio"
+                name="contact_method"
+                value="max"
+              />
+              Написать в MAX
+            </label>
+
+            <label class="form__option">
+              <input
+                type="radio"
+                class="form__radio"
+                name="contact_method"
+                value="phone"
+              />
+              Позвонить по телефону
+            </label>
+
+            <label class="form__agreement">
+              <input
+                name="agreement"
+                type="checkbox"
+                class="form__checkbox"
+                required
+              />
+              Согласен(а) с политикой обработки персональных данных
+            </label>
+          </div>
+
+          <button type="submit" class="form__button">Записаться</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
