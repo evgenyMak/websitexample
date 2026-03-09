@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com");
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
 
 /* ПЕРЕМЕННЫЕ */
 :root {
@@ -108,6 +109,7 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.5px;
   color: var(--accent-gold);
+  font-family: "Playpen Sans", cursive;
 }
 
 .logo__descr {
@@ -310,33 +312,34 @@ section {
   width: 90%;
 }
 
+/* КРИЗИСЫ */
 .info__ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-auto-flow: column;
-  gap: 15px 40px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
   width: 100%;
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.292);
   border-radius: 5px;
+}
+
+.info__ul-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  background-color: #ffffff06;
+  border-radius: 5px;
 }
 
 .info__item {
   position: relative;
-  padding-left: 25px;
+  height: 60px;
   font-size: var(--fs-base);
   font-weight: 500;
   opacity: 0.9;
-}
-
-.info__item::before {
-  content: "→";
-  position: absolute;
-  left: 0;
-  font-weight: bold;
-  color: var(--accent-gold);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.148);
 }
 
 .info__container strong {
