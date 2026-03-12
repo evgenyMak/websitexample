@@ -207,6 +207,10 @@ h1 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
+.nav__item--btn .call {
+  margin-left: 5px;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -217,7 +221,7 @@ section {
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 15px;
   list-style: none;
 }
 
@@ -378,9 +382,42 @@ section {
 }
 
 .call {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  aspect-ratio: 1/1;
 }
+
+.vk {
+  height: 100px;
+}
+
+.max {
+  height: 50px;
+}
+
+.copy {
+  cursor: pointer;
+}
+
+.copy__box {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition:  all .2s;
+}
+
+.copy__box.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
 
 .contacts__container {
   display: flex;
@@ -394,6 +431,7 @@ section {
 .contacts {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 18px;
   width: 50%;
   list-style: none;
@@ -495,6 +533,7 @@ section {
   width: 60%;
   text-align: center;
   color: #000;
+  font-family: "Playpen Sans", cursive;
   margin: 0;
 }
 
