@@ -10,7 +10,7 @@ form.addEventListener("submit", (e) => {
   fetch(scriptUrl, {
     method: "POST",
     body: formData,
-  }).finally(() =>
+  }).catch(() =>
     alertText(
       "Технические проблемы. Пожалуйства свяжитесь с нами сами. Способы связи в разделе 'Контакты' на основной странице",
     ),
