@@ -13,3 +13,4 @@ function copyNumberToClipboard(element) {
   const result = element.innerText.split(" ").join("").slice(1);
   copyToClipboard(result);
 }
+
