@@ -309,11 +309,38 @@ section {
   gap: 30px;
 }
 
-.info__desc {
-  flex-grow: 1;
-  font-size: var(--fs-md);
-  font-weight: 400;
+.info__desc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   width: 90%;
+}
+
+.info__desc-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  list-style: none;
+  padding: 25px 0;
+  border-left: 1px solid var(--accent-gold);
+  background-color: #00000028;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.info__desc-ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+  line-height: 1.2;
+  color: #fff;
+  font-size: 1.05rem;
+  width: 90%;
+}
+
+.info__desc-ul li strong {
+  color: #fff !important;
+  font-weight: 600;
 }
 
 /* КРИЗИСЫ */
@@ -339,8 +366,8 @@ section {
 
 .info__item {
   position: relative;
-  height: 60px;
-  font-size: var(--fs-base);
+  height: 70px;
+  font-size: 1.05rem;
   font-weight: 500;
   opacity: 0.9;
   border-bottom: 1px solid rgba(255, 255, 255, 0.148);
