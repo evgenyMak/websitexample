@@ -409,10 +409,6 @@
 
 /* High DPI displays */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .info__container-img {
-    background-image: url("../img/logo1.jpg");
-  }
-
   .welcome__background {
     background-image:
       linear-gradient(
