@@ -10,6 +10,19 @@
     --fs-xs: 0.75rem;
   }
 
+  .footer_coloums {
+    flex-direction: column;
+    gap: 40px;
+
+    .logo {
+      display: none;
+    }
+  }
+
+  .add_links {
+    align-items: center;
+  }
+
   .container {
     padding: 20px 15px !important;
   }
