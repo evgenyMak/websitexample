@@ -403,9 +403,9 @@ section {
   background:
     linear-gradient(
       to right,
-      rgba(26, 22, 19, 1) 0%,
+      rgba(26, 22, 19, 0.842) 0%,
       rgba(26, 22, 19, 0.8) 40%,
-      rgba(26, 22, 19, 0.443) 100%
+      rgba(26, 22, 19, 0.61) 100%
     ),
     url(./img/background.png) center/cover no-repeat;
   border-top: 1px solid var(--border-color);
@@ -441,11 +441,19 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.add_links__container {
+  display: flex;
+  flex-direction: column;
   gap: 5px;
 }
 
 .add_links__ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .call {
