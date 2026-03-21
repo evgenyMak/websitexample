@@ -277,7 +277,6 @@
 
   .form {
     width: 100% !important;
-    height: auto !important;
     min-height: 90vh;
     padding: 25px 15px !important;
     border-radius: 10px !important;
@@ -289,6 +288,18 @@
     width: 100% !important;
   }
 
+  .prev__link {
+    left: 81.5%;
+    top: 10px;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(240, 255, 255, 0.192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
   .form__desc {
     font-size: 0.85rem;
     text-align: center;
@@ -296,6 +307,10 @@
 
   .form__input-container {
     gap: 15px !important;
+  }
+
+  .form__label {
+    width: 100% !important;
   }
 
   .form__input {
