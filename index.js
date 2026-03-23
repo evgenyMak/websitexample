@@ -1,21 +1,24 @@
-import alertText from "./js/alert.js";
-import { copyNumberToClipboard } from "./js/clipboard.js";
+const form = document.querySelector("#form");
+const scriptUrl = "https://script.google.com";
 
-document.querySelectorAll(".copy").forEach((item) =>
-  item.addEventListener("click", (e) => {
-    copyNumberToClipboard(e.currentTarget);
-  }),
-);
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-document.addEventListener("DOMContentLoaded", () => {
-  const urlParams = new URLSearchParams(window.location.search);
+  const formData = new FormData(form);
 
-  if (urlParams.get("sent") === "1") {
-    alertText(
-      "Ваша заявка успешно отправлена! В скором времени я свяжусь с вами",
-      { isImportant: true },
-    );
-
-    window.history.replaceState({}, document.title, window.location.pathname);
-  }
+  fetch(scriptUrl, {
+    method: "POST",
+    body: formData,
+    mode: "no-cors",
+  })
+    .then(() => {
+      const repoName = "/websitexample/";
+      window.location.href =
+        window.location.origin + repoName + "index.html?sent=1";
+    })
+    .catch(() => {
+      alertText(
+        "Технические проблемы. Пожалуйства свяжитесь с нами сами. Способы связи в разделе 'Контакты' на основной странице",
+      );
+    });
 });
