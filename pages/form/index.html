@@ -10,125 +10,127 @@
   <body>
     <div class="body__container">
       <form class="form" method="POST" id="form">
-        <div class="form__header-container">
-          <a href="../../" class="prev__link">&#10005;</a>
-          <h1 class="form__header">Запишитесь на консультацию</h1>
-          <p class="form__desc">
-            Заполните форму и я свяжусь с Вами в ближайшее время
-          </p>
-        </div>
-        <div class="form__input-container">
-          <label class="form__label">
-            Ваше имя
-            <input
-              type="text"
-              name="user_name"
-              class="form__input"
-              placeholder="Иван Иванов"
-              title="Введите ваше имя"
-              required
-            />
-          </label>
-          <label class="form__label">
-            Удобные дни и часы
-            <input
-              type="text"
-              name="preferred_time"
-              class="form__input"
-              placeholder="Пн-Вск 8:00-23:00"
-              title="Укажите удобное время для связи"
-              required
-            />
-          </label>
-          <label class="form__label">
-            Ваш запрос
-            <input
-              type="text"
-              name="user_request"
-              class="form__input"
-              placeholder="Кратко опишите ситуацию"
-              title="Опишите вашу ситуацию"
-              required
-            />
-          </label>
-          <label class="form__label">
-            Номер телефона
-            <input
-              type="tel"
-              name="user_phone"
-              class="form__input"
-              placeholder="+7 (999) 000-00-00"
-              pattern="^(\+7|8)[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$"
-              title="Введите корректный номер телефона"
-              required
-            />
-          </label>
-          <label class="form__label">
-            Email
-            <input
-              type="email"
-              name="user_email"
-              class="form__input"
-              placeholder="example@mail.com"
-              title="Введите корректный адрес почты"
-              required
-            />
-          </label>
-          <div class="form__options">
-            <p class="form__options-title">Предпочтительный способ связи</p>
-            <label class="form__option">
+        <div class="form__container">
+          <div class="form__header-container">
+            <a href="../../" class="prev__link">&#10005;</a>
+            <h1 class="form__header">Запишитесь на консультацию</h1>
+            <p class="form__desc">
+              Заполните форму и я свяжусь с Вами в ближайшее время
+            </p>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label">
+              Ваше имя
               <input
-                type="radio"
-                class="form__radio"
-                name="contact_method"
-                value="telegram"
-              />
-              Написать в Telegram
-            </label>
-            <label class="form__option">
-              <input
-                type="radio"
-                class="form__radio"
-                name="contact_method"
-                value="email"
-              />
-              Написать на Email
-            </label>
-            <label class="form__option">
-              <input
-                type="radio"
-                class="form__radio"
-                name="contact_method"
-                value="max"
-              />
-              Написать в MAX
-            </label>
-            <label class="form__option">
-              <input
-                type="radio"
-                class="form__radio"
-                name="contact_method"
-                value="phone"
-              />
-              Позвонить по телефону
-            </label>
-            <label class="form__agreement">
-              <input
-                name="agreement"
-                type="checkbox"
-                class="form__checkbox"
+                type="text"
+                name="user_name"
+                class="form__input"
+                placeholder="Иван Иванов"
+                title="Введите ваше имя"
                 required
               />
-              Согласен(а) с политикой обработки персональных данных
             </label>
+            <label class="form__label">
+              Удобные дни и часы
+              <input
+                type="text"
+                name="preferred_time"
+                class="form__input"
+                placeholder="Пн-Вск 8:00-23:00"
+                title="Укажите удобное время для связи"
+                required
+              />
+            </label>
+            <label class="form__label">
+              Ваш запрос
+              <input
+                type="text"
+                name="user_request"
+                class="form__input"
+                placeholder="Кратко опишите ситуацию"
+                title="Опишите вашу ситуацию"
+                required
+              />
+            </label>
+            <label class="form__label">
+              Номер телефона
+              <input
+                type="tel"
+                name="user_phone"
+                class="form__input"
+                placeholder="+7 (999) 000-00-00"
+                pattern="^(\+7|8)[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$"
+                title="Введите корректный номер телефона"
+                required
+              />
+            </label>
+            <label class="form__label">
+              Email
+              <input
+                type="email"
+                name="user_email"
+                class="form__input"
+                placeholder="example@mail.com"
+                title="Введите корректный адрес почты"
+                required
+              />
+            </label>
+            <div class="form__options">
+              <p class="form__options-title">Предпочтительный способ связи</p>
+              <label class="form__option">
+                <input
+                  type="radio"
+                  class="form__radio"
+                  name="contact_method"
+                  value="telegram"
+                />
+                Написать в Telegram
+              </label>
+              <label class="form__option">
+                <input
+                  type="radio"
+                  class="form__radio"
+                  name="contact_method"
+                  value="email"
+                />
+                Написать на Email
+              </label>
+              <label class="form__option">
+                <input
+                  type="radio"
+                  class="form__radio"
+                  name="contact_method"
+                  value="max"
+                />
+                Написать в MAX
+              </label>
+              <label class="form__option">
+                <input
+                  type="radio"
+                  class="form__radio"
+                  name="contact_method"
+                  value="phone"
+                />
+                Позвонить по телефону
+              </label>
+              <label class="form__agreement">
+                <input
+                  name="agreement"
+                  type="checkbox"
+                  class="form__checkbox"
+                  required
+                />
+                Согласен(а) с политикой обработки персональных данных
+              </label>
+            </div>
+            <button type="submit" class="form__button">Записаться</button>
           </div>
-          <button type="submit" class="form__button">Записаться</button>
         </div>
       </form>
     </div>
     <div class="alert__box">
       <p class="alert__box-text"></p>
-      <img src="./img/icon.png" class="important__icon">
+      <img src="./img/icon.png" class="important__icon" />
     </div>
     <script src="../../js/mail.js"></script>
   </body>
