@@ -1,6 +1,5 @@
 const form = document.querySelector("#form");
-const scriptUrl =
-  "https://script.google.com/macros/s/AKfycbxjk_y12et_RaASCWDdGuSYmcATC4ih5sB9w6WGk8qGjaH27ALfUFoqjgyae0SEVeYARw/exec";
+const scriptUrl = "https://script.google.com";
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -10,14 +9,17 @@ form.addEventListener("submit", (e) => {
   fetch(scriptUrl, {
     method: "POST",
     body: formData,
+    mode: "no-cors",
   })
-    .catch(() =>
-      alertText(
-        "Технические проблемы. Пожалуйства свяжитесь с нами сами. Способы связи в разделе 'Контакты' на основной странице",
-      ),
-    )
     .then(() => {
-      console.log("red.")
-      window.location.href = "./index.html?sent=1";
+      const url = new URL(window.location.href);
+      const newPath =
+        url.pathname.split("/").slice(0, -2).join("/") + "/index.html";
+      window.location.href = url.origin + newPath + "?sent=1";
+    })
+    .catch(() => {
+      alertText(
+        "Технические проблемы. Пожалуйста свяжитесь с нами сами. Способы связи в разделе 'Контакты' на основной странице",
+      );
     });
 });
