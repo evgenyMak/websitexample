@@ -17,9 +17,6 @@ form.addEventListener("submit", (e) => {
       ),
     )
     .then(() => {
-      alertText(
-        "Ваша заявка успешно отправлена! В скором времени я свяжусь с вами",
-        { isImportant: true },
-      );
+      window.location.href = "/index.html?sent=1";
     });
 });
