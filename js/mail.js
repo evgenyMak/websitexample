@@ -12,14 +12,11 @@ form.addEventListener("submit", (e) => {
     mode: "no-cors",
   })
     .then(() => {
-      const url = new URL(window.location.href);
-      const newPath =
-        url.pathname.split("/").slice(0, -2).join("/") + "/index.html";
-      window.location.href = url.origin + newPath + "?sent=1";
+      window.location.href = "/websitexample/index.html?sent=1";
     })
     .catch(() => {
       alertText(
-        "Технические проблемы. Пожалуйста свяжитесь с нами сами. Способы связи в разделе 'Контакты' на основной странице",
+        "Технические проблемы. Пожалуйства свяжитесь с нами сами. Способы связи в разделе 'Контакты' на основной странице",
       );
     });
 });

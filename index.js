@@ -1,23 +1,21 @@
-const form = document.querySelector("#form");
-const scriptUrl =
-  "https://script.google.com";
+import alertText from "./js/alert.js";
+import { copyNumberToClipboard } from "./js/clipboard.js";
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+document.querySelectorAll(".copy").forEach((item) =>
+  item.addEventListener("click", (e) => {
+    copyNumberToClipboard(e.currentTarget);
+  }),
+);
 
-  const formData = new FormData(form);
+document.addEventListener("DOMContentLoaded", () => {
+  const urlParams = new URLSearchParams(window.location.search);
 
-  fetch(scriptUrl, {
-    method: "POST",
-    body: formData,
-    mode: "no-cors",
-  })
-    .then(() => {
-      window.location.href = "/websitexample/index.html?sent=1";
-    })
-    .catch(() => {
-      alertText(
-        "Технические проблемы. Пожалуйства свяжитесь с нами сами. Способы связи в разделе 'Контакты' на основной странице",
-      );
-    });
+  if (urlParams.get("sent") === "1") {
+    alertText(
+      "Ваша заявка успешно отправлена! В скором времени я свяжусь с вами",
+      { isImportant: true },
+    );
+
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
 });
