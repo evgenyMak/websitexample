@@ -1,5 +1,6 @@
 const form = document.querySelector("#form");
-const scriptUrl = "https://script.google.com";
+const scriptUrl =
+  "https://script.google.com";
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -12,9 +13,7 @@ form.addEventListener("submit", (e) => {
     mode: "no-cors",
   })
     .then(() => {
-      const repoName = "/websitexample/";
-      window.location.href =
-        window.location.origin + repoName + "index.html?sent=1";
+      window.location.href = "/websitexample/index.html?sent=1";
     })
     .catch(() => {
       alertText(
