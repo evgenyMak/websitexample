@@ -17,6 +17,6 @@ form.addEventListener("submit", (e) => {
       ),
     )
     .then(() => {
-      window.location.href = "/index.html?sent=1";
+      window.location.href = "./index.html?sent=1";
     });
 });

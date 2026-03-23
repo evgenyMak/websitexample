@@ -142,6 +142,10 @@ h1 {
   font-weight: 400;
 }
 
+.nav__item.active a {
+  color: var(--accent-gold);
+}
+
 .welcome {
   display: flex;
   align-items: center;
