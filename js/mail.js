@@ -17,6 +17,7 @@ form.addEventListener("submit", (e) => {
       ),
     )
     .then(() => {
+      console.log("red.")
       window.location.href = "./index.html?sent=1";
     });
 });
