@@ -502,6 +502,28 @@ section {
   text-align: center;
 }
 
+.important__icon {
+  display: none;
+}
+
+.important {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  .important__icon {
+    display: block;
+    order: 1;
+    height: 60px;
+    aspect-ratio: 1/1;
+  }
+
+  p {
+    order: 2;
+  }
+}
+
 .alert__box.show {
   opacity: 1;
   visibility: visible;

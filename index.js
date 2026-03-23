@@ -1,3 +1,4 @@
+import alertText from "./js/alert.js";
 import { copyNumberToClipboard } from "./js/clipboard.js";
 
 document.querySelectorAll(".copy").forEach((item) =>
