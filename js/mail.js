@@ -12,7 +12,7 @@ form.addEventListener("submit", (e) => {
     mode: "no-cors",
   })
     .then(() => {
-      window.location.href = "/websitexample/index.html?sent=1";
+      window.location.href = "/index.html?sent=1";
     })
     .catch(() => {
       alertText(
