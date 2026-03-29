@@ -688,6 +688,11 @@ section {
   border-bottom-color: rgb(235, 237, 236);
 }
 
+.form__input:disabled {
+  opacity: 0.5;
+  color: #938c8c8f;
+}
+
 .form__options {
   width: 70%;
   display: flex;
@@ -808,4 +813,42 @@ section {
   color: var(--accent-gold);
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+.prev__container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #2bff001a;
+  border-radius: 10px;
+  border: 2px solid #03cd1eba;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  gap: 15px;
+  line-height: 24px;
+  display: none;
+}
+
+.prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #0cc20c2b;
+  border-radius: 10px;
+  border: 2px solid #07ee31ba;
+}
+
+.prev:hover {
+  border-color: var(--accent-gold);
+  background-color: var(--border-color);
+}
+
+.visib {
+  display: flex;
+}
+
+.hidden {
+  display: none;
 }
