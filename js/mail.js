@@ -23,7 +23,7 @@ form.addEventListener("submit", (e) => {
       document.querySelector(".prev__link").classList.add("hidden");
       document.querySelector(".form__button").classList.add("hidden");
 
-      window.scrollTo({
+      document.querySelector(".form").scrollTo({
         top: 0,
         behavior: "smooth",
       });
