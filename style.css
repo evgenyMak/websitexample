@@ -828,6 +828,11 @@ section {
   gap: 15px;
   line-height: 24px;
   display: none;
+
+  p b {
+    width: 70%;
+    display: inline-block;
+  }
 }
 
 .prev {
