@@ -15,11 +15,14 @@ form.addEventListener("submit", (e) => {
     .then(() => {
       // window.location.href = "/index.html?sent=1";
       document.querySelector(".prev__container").classList.add("visib");
-      [...document.querySelector(".form").querySelectorAll("input")].forEach(
-        (e) => {
-          e.disabled = true;
-        },
-      );
+      [
+        document.querySelector(".form__header-container"),
+        document.querySelector(".form__input-container"),
+      ].forEach((e) => {
+        e.style.display = "none";
+      });
+
+      document.querySelector(".form").classList.add("center");
       document.querySelector(".prev__link").classList.add("hidden");
       document.querySelector(".form__button").classList.add("hidden");
 

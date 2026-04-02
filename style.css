@@ -832,6 +832,8 @@ section {
   p b {
     width: 70%;
     display: inline-block;
+    font-size: 1.3em;
+    color: var(--accent-gold);
   }
 }
 
@@ -856,4 +858,13 @@ section {
 
 .hidden {
   display: none;
+}
+
+.form.center {
+  height: 40%;
+
+  .form__container {
+    justify-content: center;
+    align-items: center;
+  }
 }
