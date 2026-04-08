@@ -104,6 +104,18 @@ h1 {
   gap: 5px;
 }
 
+.base-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  height: 50px;
+  width: 50px;
+}
+
 .logo__link {
   font-size: 1.8rem;
   font-weight: 700;
