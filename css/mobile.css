@@ -244,6 +244,11 @@
     width: 40px !important;
   }
 
+  .contacts .vk {
+    height: 70px !important;
+    width: 70px !important;
+  }
+
   /* Home Page */
   .home-page {
     gap: 30px !important;
