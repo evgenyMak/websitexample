@@ -562,6 +562,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  text-align: center;
 }
 
 .contacts {
