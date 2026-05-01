@@ -455,6 +455,16 @@ section {
   position: relative;
 }
 
+.rigths {
+  width: 100%;
+  text-align: center;
+  
+  h2 {
+    font-size: 1em;
+    font-weight: 400;
+  }
+}
+
 .logo .info__container-img {
   height: 100px;
   width: 100px;
