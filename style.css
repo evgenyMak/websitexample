@@ -116,6 +116,10 @@ h1 {
   width: 50px;
 }
 
+.wx {
+  color: var(--accent-gold);
+}
+
 .logo__link {
   font-size: 1.8rem;
   font-weight: 700;
