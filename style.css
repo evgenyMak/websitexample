@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com");
 @import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap");
 
+@import url("./css/components/shared.css");
+@import url("./css/components/logo.css");
+@import url("./css/components/nav.css");
+@import url("./css/components/header.css");
+@import url("./css/components/hero.css");
+
 /* ПЕРЕМЕННЫЕ */
 :root {
   --border-color: #c5a05926;
@@ -58,30 +64,6 @@ h1 {
   color: #ffffff;
 }
 
-.container {
-  padding: 35px 45px;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  background: rgba(53, 53, 53, 0.183);
-  backdrop-filter: blur(8px);
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.541);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  color: #fff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.142);
-}
-
-.btn:hover {
-  background-color: rgba(197, 160, 89, 0.08);
-  border-color: var(--accent-gold);
-}
-
 .home-page {
   display: flex;
   flex-direction: column;
@@ -90,141 +72,21 @@ h1 {
   min-height: 100vh;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 10;
-  width: 100%;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.base-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-img {
-  height: 50px;
-  width: 50px;
-}
-
 .wx {
-  color: var(--accent-gold);
+  font-weight: bold;
+  animation: blink 3s linear infinite;
 }
 
-.logo__link {
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  color: var(--accent-gold);
-  font-family: "Playpen Sans", cursive;
-}
-
-.logo__descr {
-  font-size: var(--fs-xs);
-  opacity: 0.8;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-grow: 1;
-  list-style: none;
-}
-
-.nav__menu {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.nav__item {
-  position: relative;
-}
-
-.nav__link {
-  font-size: var(--fs-base);
-  font-weight: 400;
-}
-
-.nav__item.active a {
-  color: var(--accent-gold);
-}
-
-.welcome {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  position: relative;
-}
-
-.welcome__background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 100vh;
-  width: 100%;
-  background:
-    linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.95) 0%,
-      rgba(0, 0, 0, 0.7) 30%,
-      rgba(0, 0, 0, 0.3) 60%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    url("./img/background.png") center/cover no-repeat;
-}
-
-.welcome__text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  max-width: 100%;
-}
-
-.welcome__title {
-  font-size: var(--fs-xl);
-  font-weight: 800;
-  line-height: 1.1;
-  color: #fff;
-  width: 100%;
-}
-
-.welcome__description {
-  width: 50%;
-  font-size: var(--fs-md);
-  line-height: 1.6;
-  color: #fff;
-  opacity: 0.85;
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-}
-
-.welcome .btn--welcome {
-  margin-top: 10px;
-  width: 210px;
-  height: 52px;
-  background: #fff;
-  color: var(--bg-dark);
-  font-weight: 700;
-  font-size: var(--fs-md);
-  border: none;
-}
-
-.welcome .btn--welcome:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+@keyframes blink {
+  0%,
+  100% {
+    color: var(--accent-gold);
+  }
+  50% {
+    color: var(
+      --text-cream
+    );
+  }
 }
 
 .nav__item--btn .call {
@@ -462,7 +324,7 @@ section {
 .rigths {
   width: 100%;
   text-align: center;
-  
+
   h2 {
     font-size: 1em;
     font-weight: 400;

@@ -20,7 +20,7 @@
 
     .logo .info__container-img {
       height: 120px !important;
-      width:  120px !important;
+      width: 120px !important;
     }
   }
 
@@ -75,37 +75,37 @@
     height: 24px !important;
   }
 
-  /* Welcome Section */
-  .welcome {
+  /* hero Section */
+  .hero {
     padding: 20px 15px;
     min-height: auto;
   }
 
-  .welcome__text-container {
+  .hero__text-container {
     align-items: center !important;
     text-align: center !important;
     gap: 15px !important;
   }
 
-  .welcome__title {
+  .hero__title {
     font-size: 1.5rem !important;
     line-height: 1.3 !important;
   }
 
-  .welcome__description {
+  .hero__description {
     width: 100% !important;
     font-size: 0.9rem !important;
     line-height: 1.5 !important;
   }
 
-  .welcome .btn--welcome {
+  .hero .btn--hero {
     width: 180px !important;
     height: 45px !important;
     font-size: 1rem !important;
     margin-top: 5px;
   }
 
-  .welcome__background {
+  .hero__background {
     height: 100% !important;
     min-height: 100vh;
   }
@@ -257,7 +257,7 @@
 
 /* Extra small devices */
 @media (max-width: 320px) {
-  .welcome__title {
+  .hero__title {
     font-size: 1.25rem !important;
   }
 
@@ -377,7 +377,7 @@
     gap: 15px;
   }
 
-  .welcome__description {
+  .hero__description {
     width: 80%;
   }
 
@@ -422,20 +422,20 @@
 
 /* Landscape mobile */
 @media (max-height: 500px) and (orientation: landscape) {
-  .welcome {
+  .hero {
     min-height: auto;
     padding: 15px;
   }
 
-  .welcome__background {
+  .hero__background {
     min-height: 100vh;
   }
 
-  .welcome__title {
+  .hero__title {
     font-size: 1.3rem !important;
   }
 
-  .welcome__description {
+  .hero__description {
     display: none;
   }
 
@@ -447,7 +447,7 @@
 
 /* High DPI displays */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .welcome__background {
+  .hero__background {
     background-image:
       linear-gradient(
         to right,

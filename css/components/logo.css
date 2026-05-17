@@ -1,0 +1,31 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.logo-img {
+  height: 50px;
+  width: 50px;
+}
+
+.logo__link {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--accent-gold);
+  font-family: "Playpen Sans", cursive;
+}
+
+.logo__descr {
+  font-size: var(--fs-xs);
+  opacity: 0.8;
+}
